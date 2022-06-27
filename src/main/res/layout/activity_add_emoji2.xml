@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addEmoji">
+    <FrameLayout
+        android:id="@+id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/emojibackground">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="353dp"
+            android:layout_height="586dp"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            app:cardBackgroundColor="#8EDCE6"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="5dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:fontFamily="sans-serif-black"
+                android:text="Add An Emoji!"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                android:textColor="@color/purple_700"
+                android:textSize="48sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="64dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="25dp"
+                android:text="Add  Emoji"
+                tools:layout_editor_absoluteX="158dp"
+                tools:layout_editor_absoluteY="233dp" />
+
+            <ImageView
+                android:id="@+id/preview"
+                android:layout_width="247dp"
+                android:layout_height="257dp"
+                android:layout_gravity="bottom|center"
+                android:layout_marginBottom="15dp"
+                app:srcCompat="@drawable/hugem"
+                tools:layout_editor_absoluteX="95dp"
+                tools:layout_editor_absoluteY="350dp" />
+
+            <EditText
+                android:id="@+id/EnterEmojiName"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="100dp"
+                android:background="#C64ED8CC"
+                android:ems="10"
+                android:hint="Enter Emoji Name"
+                android:inputType="textPersonName"
+                android:textColorHint="#052D32"
+                tools:layout_editor_absoluteX="100dp"
+                tools:layout_editor_absoluteY="158dp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="120dp"
+                android:clickable="true"
+                app:backgroundTint="#C64ED8CC"
+                app:srcCompat="@drawable/image" />
+
+        </androidx.cardview.widget.CardView>
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
