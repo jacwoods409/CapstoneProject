@@ -33,6 +33,6 @@ I added a SQL database as well as added features that allows for the user to cal
 the app!
 
 #
-**Please view this repository to see the different applications within this project!***
+**Please view this repository to see the different applications within this project and let me know what you think!***
 
 
